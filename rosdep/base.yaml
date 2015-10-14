@@ -88,6 +88,7 @@ assimp:
   debian:
     jessie: [libassimp-dev]
     sid: [libassimp-dev]
+    stretch: [libassimp-dev]
     wheezy: [libassimp-dev]
   fedora: [assimp]
   gentoo:
@@ -135,6 +136,7 @@ assimp-dev:
   debian:
     jessie: [libassimp-dev]
     sid: [libassimp-dev]
+    stretch: [libassimp-dev]
     wheezy: [libassimp-dev]
   fedora: [assimp-devel]
   gentoo:
@@ -296,6 +298,7 @@ boost:
     jessie: [libboost-all-dev]
     sid: [libboost-all-dev]
     squeeze: [libboost1.42-all-dev]
+    stretch: [libboost-all-dev]
     wheezy: [libboost-all-dev]
   fedora: [boost-devel]
   freebsd: [boost-python-libs]
@@ -565,6 +568,7 @@ eigen:
   debian:
     jessie: [libeigen3-dev]
     sid: [libeigen3-dev]
+    stretch: [libeigen3-dev]
     wheezy: [libeigen3-dev]
   fedora: [eigen3-devel]
   gentoo:
@@ -1698,6 +1702,7 @@ libogre-dev:
   debian:
     jessie: [libogre-1.9-dev]
     sid: [libogre-1.9-dev]
+    stretch: [libogre-1.9-dev]
     wheezy: [libogre-dev]
   fedora: [ogre-devel]
   gentoo: [dev-games/ogre]
@@ -1793,6 +1798,7 @@ libpcap:
       packages: [libpcap0.8-dev]
 libpcl-all:
   arch: [pcl]
+  debian: [libpcl1.7]
   fedora: [pcl, pcl-tools]
   gentoo:
     portage:
@@ -1809,6 +1815,7 @@ libpcl-all:
     vivid: [libpcl1.7]
 libpcl-all-dev:
   arch: [pcl]
+  debian: [libpcl-dev]
   fedora: [pcl-devel]
   gentoo:
     portage:
@@ -1973,7 +1980,11 @@ libqhull:
   ubuntu: [libqhull-dev]
 libqt4:
   arch: [qt4]
-  debian: [libqt4-core]
+  debian:
+    jessie: [libqt4-core]
+    sid: [libqtcore4]
+    stretch: [libqtcore4]
+    wheezy: [libqt4-core]
   fedora: [qt]
   freebsd: [qt4-corelib]
   gentoo:
@@ -2248,6 +2259,7 @@ libtool:
     lenny: [libtool, libltdl3-dev]
     sid: [libtool, libltdl-dev]
     squeeze: [libtool, libltdl-dev]
+    stretch: [libtool, libltdl-dev]
     wheezy: [libtool, libltdl-dev]
   fedora: [libtool, libtool-ltdl-devel]
   freebsd: [libtool]
@@ -2542,6 +2554,7 @@ log4cxx:
     jessie: [liblog4cxx10-dev]
     sid: [liblog4cxx10-dev]
     squeeze: [liblog4cxx10-dev]
+    stretch: [liblog4cxx-dev]
     wheezy: [liblog4cxx10-dev]
   fedora: [log4cxx-devel]
   freebsd: [log4cxx]
@@ -3551,6 +3564,7 @@ yaml-cpp:
       source:
         md5sum: f7fb81fd4a2fbd5022daa7686e816359
         uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/yaml-cpp/yaml-cpp-0.2.5.rdmanifest'
+    stretch: [libyaml-cpp-dev]
     wheezy:
       apt:
         packages: [libyaml-cpp-dev]

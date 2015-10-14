@@ -94,6 +94,7 @@ python-argparse:
     jessie: [libpython2.7-stdlib]
     sid: [libpython2.7-stdlib]
     squeeze: [python-argparse]
+    stretch: [libpython2.7-stdlib]
     wheezy: [python-argparse]
   fedora: [python]
   gentoo: [dev-python/argparse]
@@ -1359,6 +1360,7 @@ python-qt-bindings:
     jessie: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     sid: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     squeeze: [python-qt4, python-qt4-dev, pyhton-sip-dev]
+    stretch: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
     wheezy: [python-pyside, libpyside-dev, libshiboken-dev, shiboken, python-qt4, python-qt4-dev, python-sip-dev]
   fedora: [PyQt4, PyQt4-devel, sip-devel]
   gentoo: [PyQt4]
@@ -2026,7 +2028,12 @@ python-visual:
   ubuntu: [python-visual]
 python-vtk:
   arch: [vtk]
-  debian: [python-vtk]
+  debian:
+    jessie: [python-vtk]
+    sid: [python-vtk]
+    squeeze: [python-vtk]
+    stretch: [python-vtk6]
+    wheezy: [python-vtk]
   fedora: [vtk-python]
   ubuntu:
     lucid: [python-vtk]
